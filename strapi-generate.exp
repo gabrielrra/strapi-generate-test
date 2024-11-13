@@ -1,0 +1,8 @@
+#!/bin/expect
+spawn yarn strapi generate
+send -- "\n\r"
+sleep 2
+send -- "test\r"
+sleep 2
+send -- "n\r"
+expect eof
